@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: 0;
+    outline: 0;
+    font-weight: 500;
+}
+
+:root{
+    --main-color:rgb(6, 140, 250);
+    --white:white;
+    --bg-color:rgb(15, 52, 200);
+}
+
+body{
+    background: rgb(14, 12, 12);
+}
+.main{
+    width: 100%;
+    height: 80vh;
+}
+img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 6rem;
+}
+
+section > h5{
+    color: var(--main-color);
+    text-align: center;
+
+}
+
+section > h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+section > h5{
+    color: var(--white);
+    font-weight: 500;
+    text-align: center;
+}
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3,
+h4 {
+    font-size: 1.2rem;
+}
+
+h5,
+h6,
+span,
+p,
+li {
+    font-size: 0.8rem;
+}
+
+
+a{
+    color: white;
+    font-size: 1rem;
+}
+
+.btn-primary{
+padding: 0.5rem 1.9rem;
+font-size: 1rem;
+font-weight: 600;
+color: white;
+background-color: var(--main-color);
+width: max-content;
+border-radius: 0.7rem;
+border: 1px solid transparent;
+}
+
+.btn-sec{
+    background: transparent;
+    color: var(--main-color);
+    font-size: 1rem;
+    padding: 0.5rem 1.9rem;
+    font-weight: 600;
+    border-radius: 0.7rem;
+    width: max-content;
+    border: 1px solid var(--main-color);
+}
+
+.btns{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+
+@media screen and (max-width:1024px) {
+    .container{
+        width: 87%;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .container{
+        width: 50%;
+    }
+
+
+}
+@media screen and (max-width:600px) {
+    .container{
+        width: 95%;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+    h2{
+        font-size: 1.3rem;
+    }
+    .btns{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

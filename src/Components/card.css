@@ -1,0 +1,10 @@
+.card{
+    background: var(--white);
+    width: 18rem;
+    height: 20rem;
+}
+
+
+.card > h5{
+    color: white;
+}

@@ -1,0 +1,46 @@
+.header__container{
+    display: grid;
+    grid-template-columns: 20% 1fr 30%;
+    gap: 3.5rem;
+    justify-content: space-between;
+    height: 3.4rem;
+    color: white;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-list{
+    display:flex;
+    gap: 3.4rem;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+.toggle{
+    display: none;
+}
+
+
+@media screen and (max-width:830px) {
+   .header__container{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    place-items: center;
+   }
+   .buttons{
+    display: none;
+   }
+   .nav-list{
+    display: none;
+   }
+   
+   
+}
+
+
